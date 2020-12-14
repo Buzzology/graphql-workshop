@@ -799,7 +799,7 @@ mkdir GraphQL/Sessions
             .AddType<SpeakerQueries>()
         .AddMutationType(d => d.Name("Mutation"))
             .AddTypeExtension<SessionMutations>()
-            .AddType<SpeakerMutations>()
+            .AddTypeExtension<SpeakerMutations>()
         .AddType<AttendeeType>()
         .AddType<SessionType>()
         .AddType<SpeakerType>()
@@ -826,7 +826,7 @@ mkdir GraphQL/Sessions
     }
    ```
 
-1. Add the `ScheduleSessionPayload` class to with the following code:
+1. Add the `ScheduleSessionPayload` class too with the following code:
 
    ```csharp
     using System.Collections.Generic;
